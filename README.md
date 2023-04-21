@@ -1,3 +1,2 @@
-# Comm. Protocol Inst. Lesson
-#aaa
-#uuu
+# Comm. Protocol Inst. Lesson ex02
+
