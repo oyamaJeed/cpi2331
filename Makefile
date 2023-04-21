@@ -1,8 +1,8 @@
 # TARGET NAME
-TARGET := ex02
+TARGET := thread1
 
 # OBJECT FILES
-OBJS := ex02.o
+OBJS := thread1.o
 
 # SOURCE FILES
 SRCS := $(OBJS:%.o=%.c)
