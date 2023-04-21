@@ -1,0 +1,18 @@
+TARGET := test2
+SRC := $(TARGET).c
+OBJ := $(TARGET).o
+DOBJ := libdlink.so
+
+CFLAGS := -c
+LFLAGS := -fPIC -o
+CC := gcc 
+LIBDIR = "/home/meit2331/cpi2331"
+
+all: $(TARGET)
+
+$(TARGET): $(SRC)
+	$(CC) $(CFLAGS) $(SRC)	
+	$(CC) -o $@ $(SRC) -L. -ldlink 
+
+clean : 
+	rm -f $(TARGET) $(OBJ) $(DOBJ)
