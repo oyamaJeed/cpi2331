@@ -15,8 +15,8 @@ struct st_ary{
 typedef struct st_ary ST_ARY;
 //---------共用体定義---------------
 union uni_exer {
-	struct st_ary sary;
-	struct st_exer exer;
+	ST_ARY  sary;
+	ST_EXER exer;
 };
 
 typedef union uni_exer UNI_EXER;
