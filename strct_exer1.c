@@ -5,22 +5,22 @@
 int main(char from,char to,char *msg[])
 {
 	ST_EXER st_val[2] = {{'1','2',"Good morinig!"},{'3','4',"Good afternoon!"}};
-	ST_EXER *st_val_p0 = &st_val[0];
-	ST_EXER *st_val_p1 = &st_val[1];
+	ST_EXER *st_val_p = st_val;
 
 	printf("*** Init ***\n");
 
-	printf("struct from = %c\n",st_val_p0->from);
-	printf("struct to = %c\n",st_val_p0->to);
-	printf("struct msg = %s\n",st_val_p0->msg);
+	printf("struct from = %c\n",st_val_p->from);
+	printf("struct to = %c\n",st_val_p->to);
+	printf("struct msg = %s\n",st_val_p->msg);
 
-	printf("struct from = %c\n",st_val_p1 -> from);
-	printf("struct to = %c\n",st_val_p1 -> to);
-	printf("struct msg = %s\n",st_val_p1 -> msg);
+	st_val_p=st_val_p+1;
+	printf("struct from = %c\n",st_val_p -> from);
+	printf("struct to = %c\n",st_val_p -> to);
+	printf("struct msg = %s\n",st_val_p -> msg);
 
-	st_val_p0 -> from = 'A';
-	st_val_p0 -> to = 'B';
-	st_val_p0 -> msg = "This is a pen";
+	st_val -> from = 'A';
+	st_val -> to = 'B';
+	st_val -> msg = "This is a pen";
 
 	printf("*** Modify ***\n");
 
