@@ -18,9 +18,13 @@ int main(char from,char to,char *msg[])
 	printf("struct to = %c\n",st_val_p -> to);
 	printf("struct msg = %s\n",st_val_p -> msg);
 
-	st_val -> from = 'A';
-	st_val -> to = 'B';
-	st_val -> msg = "This is a pen";
+	st_val_p=st_val_p-1;
+	st_val_p -> from = 'A';
+	st_val_p -> to = 'B';
+	char a[]="This is a pen";
+	for(int i=0;i<30;i++){
+		st_val_p -> msg[i] = a[i];
+	}
 
 	printf("*** Modify ***\n");
 
