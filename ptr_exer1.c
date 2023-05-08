@@ -12,7 +12,7 @@ int main(int argc ,char *argv[])
 		printf("Before str ary[%d]=%s\n",i,inp_ary1[i]);
 	}
 	
-	**get_modify_str_ary(inp_ary1,3);
+	**get_modify_str_ary(inp_ary1,ARY_MAX);
 	
 	printf("------------------------------------\n");
 	for(int k=0; k<ARY_MAX;k++){
