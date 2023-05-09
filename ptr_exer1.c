@@ -26,7 +26,7 @@ char **get_modify_str_ary(char inp_ary1[][8],int ary1_line){
 	char add_str[][2] = {"e","e","a"};
 	for(int i=0;i<ary1_line;i++){
 		strcat(inp_ary1[i],add_str[i]);
-	//	printf("%s",inp_ary1[i]);
+		//printf("%d",inp_ary1[i]);
 	}
 		
 		
